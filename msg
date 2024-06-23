@@ -214,7 +214,7 @@ del(){
 }
 
 [[ -d /bin/xdarnix ]] && {
-  [[ -e /bin/xdarnix/msg ]] || wget -q -O /bin/xdarnix/msg https://gitea.com/xdarnix/msg/raw/branch/main/msg 
+  [[ -e /bin/xdarnix/msg ]] || wget -q -O /bin/xdarnix/msg https://raw.githubusercontent.com/darnix1/license/main/msg 
 } || mkdir /bin/xdarnix
 
 
