@@ -136,7 +136,8 @@ back(){
   local options=${#@}
   local array
   for((num=1; num<=$options; num++)); do
-    echo -ne "\033[1;33m[\033[32m$num\033[1;33m] \033[1;31m> \033[0m"
+    #echo -ne "\033[1;33m[\033[32m$num\033[1;33m] \033[1;31m> \033[0m"
+    echo -ne "\033[32m[\033[37m$num\033[31m] \033[1;31m> \033[0m"
     array=(${!num})
     case ${array[0]} in
       "-vd") echo -e "\033[1;33m[\033[1;32m!\033[1;33m] \033[1;32m${array[@]:1}${SINCOLOR}";;
