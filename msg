@@ -1,5 +1,7 @@
 #!/bin/bash
 
+!/bin/bash
+
 case $newlang in
   en_US)  a_enter='Press enter to continue'
           a_back='RETURN'
@@ -21,13 +23,13 @@ dnxver() { echo -e "\e[1;37;42m${*}\e[0m";}
 dnxaz () { echo -e "   \e[97m\033[1;44m${*}\033[0m";}
 dnxama() { echo -e "\e[1;37;43m${*}\e[0m";}
 
-
 #Letras de colores sin contorno 
 green() { echo -e "\\033[32;1m${*}\\033[0m"; }
-blan() { echo -e "\\033[0;37m${*}\\033[0m"; }
+gris() { echo -e "\\033[0;37m${*}\\033[0m"; }
 red() { echo -e "\\033[31;1m${*}\\033[0m"; }
+#Amarillo centrado
 amacen() { echo -e "\e[1;93m           ${*}"; } 
-
+blanpunt() { echo -e "\033[1;37m${*}\033[1;32m.\033[1;32m.\033[1;33m.\033[1;31m. \033[1;33m";}
 
 #Funciones menu abajo 
 function sres {
@@ -64,7 +66,7 @@ msg() { ##-->> COLORES, TITULO, BARRAS
   case $1 in
   -ne) cor="${COLOR[1]}${NEGRITO}" && echo -ne "${cor}${2}${SINCOLOR}" ;;
   -nazu) cor="${COLOR[6]}${NEGRITO}" && echo -ne "${cor}${2}${SEMCOR}";;
-  -ama) cor="${COLOR[3]}${NEGRITO}" && echo -e "${cor}${2}${SINCOLOR}" ;;
+  #-ama) cor="${COLOR[3]}${NEGRITO}" && echo -e "${cor}${2}${SINCOLOR}" ;;
   -verm) cor="${COLOR[3]}${NEGRITO}[!] ${COLOR[1]}" && echo -e "${cor}${2}${SINCOLOR}" ;;
   -verm2) cor="${COLOR[1]}${NEGRITO}" && echo -e "${cor}${2}${SINCOLOR}" ;;
   -azu) cor="${COLOR[6]}${NEGRITO}" && echo -e "${cor}${2}${SINCOLOR}" ;;
@@ -73,22 +75,18 @@ msg() { ##-->> COLORES, TITULO, BARRAS
   -bar2)cor="\e[38;5;239m════════════════════════════════════════════════════" && echo -e "${cor}${SEMCOR}";;
   -bar)cor="\e[38;5;239m════════════════════════════════════════════════════" && echo -e "${cor}${SINCOLOR}";;
   -tit) 
-echo -e "\e[1;33m ❰❰❰ ░Ｄ░ ░Ａ░ ░Ｒ░ ░Ｎ░ ░Ｉ░ ░Ｘ░ ❱❱❱ 𝗩𝗲𝗿𝘀𝗶𝗼𝗻: $(cat /opt/.ver)\e[0m"
+resdi=$(cat /opt/.ver)
+echo -e "\e[1;33m ❰❰❰ ░Ｄ░ ░Ａ░ ░Ｒ░ ░Ｎ░ ░Ｉ░ ░Ｘ░ ❱❱❱ 𝗩𝗲𝗿𝘀𝗶𝗼𝗻: $resdi\e[0m"
 #test -f /opt/.ver && echo -e "\e[1;33m ❰❰❰ ░Ｄ░ ░Ａ░ ░Ｒ░ ░Ｎ░ ░Ｉ░ ░Ｘ░ ❱❱❱ 𝗩𝗲𝗿𝘀𝗶𝗼𝗻: $(cat /opt/.ver) \e[0m"
   esac
 }
 #Título
 
 title(){
-    clear
-    msg -bar
-    if [[ -z $2 ]]; then
-      msg -tit
-      print_center -ama "$1"
-    else
-      print_center "$1" "$2"
-    fi
-    msg -bar
+clear
+msg -bar
+msg -tit
+msg -bar
  }
  
 print_center(){
@@ -106,9 +104,9 @@ print_center(){
     done
     space+="$line"
     if [[ -z $2 ]]; then
-      msg -azu "$space"
+      msgi -azu "$space"
     else
-      msg "$col" "$space"
+      msgi "$col" "$space"
     fi
   done <<< $(echo -e "$text")
 }
@@ -136,8 +134,7 @@ back(){
   local options=${#@}
   local array
   for((num=1; num<=$options; num++)); do
-    #echo -ne "\033[1;33m[\033[32m$num\033[1;33m] \033[1;31m> \033[0m"
-    echo -ne "\033[32m[\033[37m$num\033[31m] \033[1;31m> \033[0m"
+    echo -ne "\033[1;33m[\033[32m$num\033[1;33m] \033[1;31m> \033[0m"
     array=(${!num})
     case ${array[0]} in
       "-vd") echo -e "\033[1;33m[\033[1;32m!\033[1;33m] \033[1;32m${array[@]:1}${SINCOLOR}";;
@@ -214,11 +211,6 @@ del(){
   done
 }
 
-[[ -d /bin/xdarnix ]] && {
-  [[ -e /bin/xdarnix/msg ]] || wget -q -O /bin/xdarnix/msg https://raw.githubusercontent.com/darnix1/license/main/msg 
-} || mkdir /bin/xdarnix
-
-
 export -f msg
 export -f selection_fun
 export -f menu_func
@@ -229,3 +221,14 @@ export -f enter
 export -f in_opcion
 export -f in_opcion_down
 export -f del
+export -f dnxroj
+export -f dnxver
+export -f dnxaz
+export -f dnxama
+#Letras de colores sin contorno 
+export -f green
+export -f gris
+export -f red
+#Amarillo centrado
+export -f amacen
+export -f blanpunt
