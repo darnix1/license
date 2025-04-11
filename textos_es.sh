@@ -43,3 +43,9 @@ PRESS_ENTER="Presione [ Enter ] para volver al menú"
 #Termina Menu principal 
 
 #Empieza menus y submenu sshovpn
+
+
+#LETRAS ARCHIVO RUNNING
+
+enter_off="Detención del servicio. Pulse cualquier tecla para volver al menú"
+enter_onn="Inicio del servicio. Pulse cualquier tecla para volver al menú"
