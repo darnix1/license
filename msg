@@ -1,6 +1,6 @@
 #!/bin/bash
 
-!/bin/bash
+
 
 case $newlang in
   en_US)  a_enter='Press enter to continue'
@@ -31,7 +31,21 @@ red() { echo -e "\\033[31;1m${*}\\033[0m"; }
 amacen() { echo -e "\e[1;93m           ${*}"; } 
 blanpunt() { echo -e "\033[1;37m${*}\033[1;32m.\033[1;32m.\033[1;33m.\033[1;31m. \033[1;33m";}
 
+
+# Restablecer formato
+_reset="\033[0m"
+
+# Funciones de color
+black()   { echo -e "\033[1;90m$@$_reset"; }  # Negro brillante
+red()     { echo -e "\033[1;91m$@$_reset"; }  # Rojo brillante
+green()   { echo -e "\033[1;92m$@$_reset"; }  # Verde brillante
+yellow()  { echo -e "\033[1;93m$@$_reset"; }  # Amarillo brillante
+blue()    { echo -e "\033[1;94m$@$_reset"; }  # Azul brillante
+purple()  { echo -e "\033[1;95m$@$_reset"; }  # Morado/Púrpura brillante
+cyan()    { echo -e "\033[1;96m$@$_reset"; }  # Celeste/Cian brillante
+white()   { echo -e "\033[1;97m$@$_reset"; }  # Blanco brillante
 #Funciones menu abajo 
+
 function sres {
     echo -e "    \e[97m\033[1;41m ENTER SIN RESPUESTA REGRESA A MENU ANTERIOR \033[0;97m"
 }
