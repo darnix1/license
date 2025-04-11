@@ -60,5 +60,5 @@ enter_onn="Inicio del servicio. Pulse cualquier tecla para volver al menú"
 run_sub="REINICIAR SERVICIOS ACTIVOS"
 run_sub1="Reiniciar todos los servicios"
 run_sub2="SERVICIOS ACTIVOS EN EL SISTEMA"
-
+run_sub3="A CONTINUACION SELECCIONA UN OPCION"
 
