@@ -22,10 +22,9 @@ menu_sub1="NOTIFICACIONES A TELEGRAM"
 menu_info1="Crear/Editar INFORMACIÓN DEL BOT Inicio de sesión múltiple SSH, XRAY & LIMITE"
 menu_info2="Crear/Editar INFORMACIÓN DEL BOT Crear usuario y otros"
 menu_info3="Crear/Editar copia de seguridad de Telegram INFO BOT"
-
 enter_id="Ingrese ID (obtener en @userinfobot)"
 enter_token="Ingrese Token del Bot (de @BotFather)"
 
 # Menú de selección universal 
 menu_selec0="Seleccione una Opcion"
-menu_select="Seleccione los números 0 para salir"
+menu_select="Seleccione los números (0)para salir"
