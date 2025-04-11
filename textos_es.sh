@@ -35,12 +35,15 @@ menu_info6="Crear una copia de seguridad de la base de datos de Telegram"
 enter_id="Ingrese ID (obtener en @userinfobot)"
 enter_token="Ingrese Token del Bot (de @BotFather)"
 
+#MENU SELECCION UNIVERSAL
 # Menú de selección universal 
 menu_selec0="Seleccione una Opcion"
 menu_select="Seleccione los números (0)para salir"
 
+#ENTER UNIVERSALES
 #Enter universales
 PRESS_ENTER="Presione [ Enter ] para volver al menú"
+
 
 #Termina Menu principal 
 
@@ -51,5 +54,11 @@ PRESS_ENTER="Presione [ Enter ] para volver al menú"
 
 enter_off="Detención del servicio. Pulse cualquier tecla para volver al menú"
 enter_onn="Inicio del servicio. Pulse cualquier tecla para volver al menú"
+
+
+
 run_sub="REINICIAR SERVICIOS ACTIVOS"
 run_sub1="Reiniciar todos los servicios"
+run_sub2="SERVICIOS ACTIVOS EN EL SISTEMA"
+
+
