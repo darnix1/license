@@ -49,3 +49,5 @@ PRESS_ENTER="Presione [ Enter ] para volver al menú"
 
 enter_off="Detención del servicio. Pulse cualquier tecla para volver al menú"
 enter_onn="Inicio del servicio. Pulse cualquier tecla para volver al menú"
+run_sub="REINICIAR SERVICIOS ACTIVOS"
+run_sub1="Reiniciar todos los servicios"
