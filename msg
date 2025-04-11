@@ -37,8 +37,8 @@ _reset="\033[0m"
 
 # Funciones de color
 black()   { echo -e "\033[1;90m$@$_reset"; }  # Negro brillante
-red()     { echo -e "\033[1;91m$@$_reset"; }  # Rojo brillante
-green()   { echo -e "\033[1;92m$@$_reset"; }  # Verde brillante
+#red()     { echo -e "\033[1;91m$@$_reset"; }  # Rojo brillante
+#green()   { echo -e "\033[1;92m$@$_reset"; }  # Verde brillante
 yellow()  { echo -e "\033[1;93m$@$_reset"; }  # Amarillo brillante
 blue()    { echo -e "\033[1;94m$@$_reset"; }  # Azul brillante
 purple()  { echo -e "\033[1;95m$@$_reset"; }  # Morado/Púrpura brillante
@@ -246,3 +246,9 @@ export -f red
 #Amarillo centrado
 export -f amacen
 export -f blanpunt
+export -f black
+export -f yellow  
+export -f blue
+export -f purple
+export -f cyan
+export -f white
