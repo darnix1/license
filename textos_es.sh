@@ -62,3 +62,8 @@ run_sub1="Reiniciar todos los servicios"
 run_sub2="SERVICIOS ACTIVOS EN EL SISTEMA"
 run_sub3="A CONTINUACION SELECCIONA UN OPCION"
 
+run_menu="[ 1 ] Reiniciar todos los servicios"
+run_menu1="[ 2 ] Detener servicios"
+run_menu2="[ 3 ] Iniciar servicios"
+run_menu3="[ 4 ] Pulsa 0 para Volver"
+
