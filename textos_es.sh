@@ -15,7 +15,12 @@ menu_op10="SISTEMA"
 menu_op11="BACKUP"
 menu_op12="REINICIAR"
 
-#Submenus
+#submenu
+menu_ver="Version"
+menu_cli="Cliente"
+
+
+#Subtitulos
 menu_sub1="NOTIFICACIONES A TELEGRAM"
 
 # Input prompts
@@ -28,3 +33,9 @@ enter_token="Ingrese Token del Bot (de @BotFather)"
 # Menú de selección universal 
 menu_selec0="Seleccione una Opcion"
 menu_select="Seleccione los números (0)para salir"
+
+
+
+#Termina Menu principal 
+
+#Empieza menus y submenu sshovpn
