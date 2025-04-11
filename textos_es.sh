@@ -1,4 +1,6 @@
 #!/bin/bash
+#echo -ne "$(green " ${menu_selec0}: ")" && read opt
+#read -rp "$(green "   ${menu_select}: ")" -e bot
 
 #TEXTOS MENU PRINCIPAL
 
