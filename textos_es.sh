@@ -19,3 +19,6 @@ menu_op12="REINICIAR"
 # Input prompts
 ENTER_ID="Ingrese ID (obtener en @userinfobot)"
 ENTER_TOKEN="Ingrese Token del Bot (de @BotFather)"
+
+# Menú de selección
+MENU_SELECT="Seleccione los números 0 para salir"
