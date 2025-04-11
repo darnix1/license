@@ -37,7 +37,8 @@ enter_token="Ingrese Token del Bot (de @BotFather)"
 menu_selec0="Seleccione una Opcion"
 menu_select="Seleccione los números (0)para salir"
 
-
+#Enter universales
+PRESS_ENTER="Presione [ Enter ] para volver al menú"
 
 #Termina Menu principal 
 
