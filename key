@@ -1,1 +1,22 @@
-# key ### jose Key3fa566hf29 6969 ON 2
+#!/bin/bash
+
+amacen() {
+    # Borde tricolor (verde, blanco, rojo) y texto en blanco
+    echo -e "\e[1;37m\e[48;5;22m[ \e[48;5;15m \e[48;5;196m ] ${*}\e[0m"
+}
+
+
+amacen2() {
+    # Franjas de fondo (verde, blanco, rojo) y texto en blanco
+    echo -e "\e[48;5;22m\e[38;5;15m     \e[48;5;15m\e[38;5;15m     \e[48;5;196m\e[38;5;15m     ${*}\e[0m"
+}
+
+amace3() {
+    echo -e "\e[1;37m\e[48;5;28m \e[48;5;15m \e[48;5;196m  ${*}\e[0m"
+}
+
+amacen "Hola"
+
+amacen2 "Hola"
+
+amace3 "Hola"
