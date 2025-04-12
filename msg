@@ -30,6 +30,7 @@ red() { echo -e "\\033[31;1m${*}\\033[0m"; }
 #Amarillo centrado
 amacen() { echo -e "\e[1;93m           ${*}"; } 
 blanpunt() { echo -e "\033[1;37m${*}\033[1;32m.\033[1;32m.\033[1;33m.\033[1;31m. \033[1;33m";}
+blanco() { echo -e "\033[1;37m${*}\033[1;32m\033[1;32m\033[1;33m\033[1;31m \033[1;33m";}
 
 
 # Restablecer formato
