@@ -253,3 +253,4 @@ export -f blue
 export -f purple
 export -f cyan
 export -f white
+export -f blanco
