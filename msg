@@ -289,3 +289,4 @@ export -f purple
 export -f cyan
 export -f menu_var
 export -f blanco
+export menu_var
