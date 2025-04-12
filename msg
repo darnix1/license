@@ -161,6 +161,42 @@ back(){
   done
  }
 
+
+menu_var() {
+  local options=("$@")  # Almacena todos los argumentos en un array
+  local array
+  local num=0
+  
+  for option in "${options[@]}"; do
+    ((num++))
+    echo -ne "\033[1;33m[\033[32m$num\033[1;33m] \033[1;31m> \033[0m"
+    
+    # Elimina espacios en blanco al final (incluyendo tu espacio después de la variable)
+    local clean_option="${option%" "}"
+    
+    # Verifica si es una variable predefinida (run_startX)
+    if [[ "$clean_option" =~ ^run_start[0-9]+$ ]]; then
+      # Obtiene el valor de la variable internacionalizada
+      local display_text="${!clean_option}"
+    else
+      # Usa el texto directo
+      local display_text="$clean_option"
+    fi
+    
+    array=("$display_text")  # Mantiene el texto como un solo elemento
+    
+    case "${array[0]}" in
+      "-vd") echo -e "\033[1;33m[\033[1;32m!\033[1;33m] \033[1;32m${array[@]:1}${SINCOLOR}";;
+      "-vm") echo -e "\033[1;33m[\033[1;31m!\033[1;33m] \033[1;31m${array[@]:1}${SINCOLOR}";;
+      "-fi") echo -e "\033[1;33m[\033[1;37m!\033[1;33m] \033[1;37m${array[@]:2} ${array[1]}${SINCOLOR}";;
+      -bar|-bar2|-bar3|-bar4) echo -e "\033[1;37m${array[@]:1}\n$(msg ${array[0]})";;
+      *) echo -e "\033[1;37m${array[@]}";;
+    esac
+  done
+}
+
+
+
  #Seleccion de menu pequeño
 in_opcion(){
   unset opcion
@@ -252,5 +288,5 @@ export -f yellow
 export -f blue
 export -f purple
 export -f cyan
-export -f white
+export -f menu_var
 export -f blanco
