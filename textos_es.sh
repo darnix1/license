@@ -1,6 +1,7 @@
 #!/bin/bash
 #echo -ne "$(green " ${menu_selec0}: ")" && read opt
 #read -rp "$(green "   ${menu_select}: ")" -e bot
+#read -n 1 -s -r -p "$(dnxroj " ${PRESS_ENTER}")"
 
 #TEXTOS MENU PRINCIPAL
 
@@ -43,11 +44,26 @@ menu_select="Seleccione los números (0)para salir"
 #ENTER UNIVERSALES
 #Enter universales
 PRESS_ENTER="Presione [ Enter ] para volver al menú"
+pres_enter="PRESIONE CUALQUIER TECLA PARA REGRESAR"
 
+#TERMINA MENU PRINCIPAL 
 
-#Termina Menu principal 
+#EMPIEZA MENUS Y SUBMENU SSHOVPN
 
-#Empieza menus y submenu sshovpn
+#Creacion de usuarios 
+ssh_us1="MENU DE CREACION DE USUARIOS SSH"
+ssh_us2="INGRESE EL USUARIO"
+ssh_us3="Nombre duplicado Por favor cree otro nombre"
+ssh_us4="INGRESE LA CONTRASENA"
+ssh_us5="TIEMPO DE DURACION DEL USUARIO"
+ssh_us6="LIMITE DE CONEXION"
+ssh_us7=""
+ssh_us8=""
+ssh_us9=""
+ssh_us10=""
+ssh_us11=""
+ssh_us12=""
+
 
 
 #LETRAS ARCHIVO RUNNING
