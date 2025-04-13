@@ -27,12 +27,12 @@ menu_cli="Cliente"
 menu_sub1="NOTIFICACIONES A TELEGRAM"
 
 # Input prompts
-menu_info1="Crear/Editar INFORMACIÓN DEL BOT Inicio de sesión múltiple SSH, XRAY & LIMITE"
-menu_info2="Crear/Editar INFORMACIÓN DEL BOT Crear usuario y otros"
-menu_info3="Crear/Editar copia de seguridad de Telegram INFO BOT"
-menu_info4="Crear para base de datos Inicio de sesión múltiple"
-menu_info5="Crear para cuentas de bases de datos y otros"
-menu_info6="Crear una copia de seguridad de la base de datos de Telegram"
+menu_info1="Info BOT - Login múltiple SSH/XRAY + Límite"
+menu_info2="Info BOT - Crear usuarios y extras"
+menu_info3="Backup Telegram - Info BOT"
+menu_info4="Crear DB - Login múltiple"
+menu_info5="Crear DB - Cuentas y más"
+menu_info6="Backup DB - Telegram"
 enter_id="Ingrese ID (obtener en @userinfobot)"
 enter_token="Ingrese Token del Bot (de @BotFather)"
 
