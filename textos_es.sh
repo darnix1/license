@@ -64,7 +64,23 @@ ssh_us10=""
 ssh_us11=""
 ssh_us12=""
 
+
+
+#BBƁBAAAAAAANNNNNNNNEEEEEERRRRRRRRRRRRRRRRRRRR
+
+ban_01="CAMBIAR BANNER SSH"
+ban_02="Pegue el contenido del banner personalizado a continuación (presione Ctrl+D para finalizar):"
+ban_03="⚠️ Pueda que sea necesario oprimir 2 veces Ctrl+D ⚠️):"
+ban_04="🚀 BANNER AGREGADO CON EXITO:🚀"
+ban_05="Por favor espera un segundo"
+ban_06="Presiona Enter para regresar al menú..."
+
+
+
+
 #MENU PRINCIPAL 
+ssh_m0="CONFIGURACION SSH CLIENTES"
+
 ssh_m1="NUEVO CLIENTE SSH 👤"
 ssh_m2="USUARIO TEMPORAL SSH"
 ssh_m3="EDITAR RENOVAR CLIENTE"
@@ -76,6 +92,10 @@ ssh_m8="AUTO ELIMINAR O BLOQUEAR"
 ssh_m9="DESBLOQUEAR LOGIN SSH"
 ssh_m10="LISTA DE USUARIOS SSH CREADOS"
 ssh_m11="MODIFICAR BANNER SSH"
+
+
+#TERMINA MENUUUUUUUUUUUU SHHHHHHHVPNNNNNNNNNNN
+###############################################
 
 #LETRAS ARCHIVO RUNNING
 
@@ -101,3 +121,5 @@ run_start4="INICIAR SERVICIO SSH"
 run_start5="INICIAR SERVICIO XRAY"
 run_start6="INICIAR SERVICIO NGINX"
 run_start0="Volver a menu"
+
+
