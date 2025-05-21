@@ -31,6 +31,8 @@ red() { echo -e "\\033[31;1m${*}\\033[0m"; }
 amacen() { echo -e "\e[1;93m           ${*}"; } 
 blanpunt() { echo -e "\033[1;37m${*}\033[1;32m.\033[1;32m.\033[1;33m.\033[1;31m. \033[1;33m";}
 blanco() { echo -e "\033[1;37m${*}\033[1;32m\033[1;32m\033[1;33m\033[1;31m \033[1;33m";}
+blan() { echo -e "\033[1;37m${*}\033[1;32m\033[1;32m\033[1;33m\033[1;31m \033[1;33m";}
+
 
 
 # Restablecer formato
@@ -289,4 +291,5 @@ export -f purple
 export -f cyan
 export -f menu_var
 export -f blanco
+export -f blan
 export menu_var
