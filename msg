@@ -98,6 +98,9 @@ echo -e "\e[1;33m ❰❰❰ ░Ｄ░ ░Ａ░ ░Ｒ░ ░Ｎ░ ░Ｉ░ �
   esac
 }
 #Título
+lin () {
+    echo -e "\e[38;5;239m════════════════════════════════════════════════\e[0m"
+}
 
 title(){
 clear
@@ -292,4 +295,5 @@ export -f cyan
 export -f menu_var
 export -f blanco
 export -f blan
+export -f lin
 export menu_var
