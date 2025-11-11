@@ -96,7 +96,7 @@ export -f yellow
 export -f blue
 export -f purple
 export -f cyan
-export -f menu_var
+#export -f menu_var
 export -f blanco
 export -f blan
 #Lineas
